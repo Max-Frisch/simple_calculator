@@ -1,5 +1,6 @@
 #
 # Simple Calculator with functions
+### (No checking / error handling)
 #
 <pre>
 
