@@ -28,12 +28,12 @@ if "*" in raw_input_string:
 if "/" in raw_input_string:
     operator = "/"
 # using regular expression to split the two operands into a list [num1, num2]
-input_string_list = re.split('\+|\-|\*|\/', raw_input_string)
+input_string_list = re.split('[\+\-\*\/]', raw_input_string)
 
 #casting the two (string) numbers into integers
-intnum1 = int(input_string_list[0])
-intnum2 = int(input_string_list[1])
+floatnum1 = float(input_string_list[0])
+floatnum2 = float(input_string_list[1])
 
-result = calculator(intnum1,operator,intnum2)
+result = calculator(floatnum1,operator,floatnum2)
 print("")
-print(f"{intnum1} {operator} {intnum2} = {result}")
+print(f"{floatnum1} {operator} {floatnum2} = {result:.2f}")
